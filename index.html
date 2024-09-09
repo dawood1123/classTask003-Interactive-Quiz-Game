@@ -9,20 +9,22 @@
 <body>
     <h1>Interactive Quiz Game</h1>
 
+    <p id="Heading">Welcome to the Interactive Quiz!</p>
+
     <div id="question">
         <p id="que">Question text</p>
     </div>
 
     <div id="opt-btn">
-        <button id="btn1" onclick="selectOption(0)">Option 1</button>
-        <button id="btn2" onclick="selectOption(1)">Option 2</button>
-        <button id="btn3" onclick="selectOption(2)">Option 3</button>
-        <button id="btn4" onclick="selectOption(3)">Option 4</button>
+        <button id="btn1" onclick="score_changer(0)">Option 1</button>
+        <button id="btn2" onClick="score_changer(1)">Option 2</button>
+        <button id="btn3" onClick="score_changer(2)">Option 3</button>
+        <button id="btn4" onClick="score_changer(3)">Option 4</button>
     </div>
 
     <div>
-        <h3 id="score">Score = 0</h3>
-        <button id="nxt-btn">Next Question</button>
+        <h3>Score = <span id="score">0</span></h3>
+        <button id="nxt-btn" onclick="next_que()">Next Question</button>
     </div>
     <script src="script.js"></script>
 
